@@ -1,18 +1,11 @@
-import {
-  ActionCtx as GenericActionCtx,
-  MutationCtx as GenericMutationCtx,
-  QueryCtx as GenericQueryCtx,
-} from convex/server;
+/* eslint-disable */
+export type QueryCtx = any;
+export type MutationCtx = any;
+export type ActionCtx = any;
 
-export type QueryCtx = GenericQueryCtx<any>;
-export type MutationCtx = GenericMutationCtx<any>;
-export type ActionCtx = GenericActionCtx<any>;
-
-export {
-  action,
-  internalAction,
-  internalMutation,
-  internalQuery,
-  mutation,
-  query,
-} from convex/server;
+export declare const query: (config: any) => any;
+export declare const mutation: (config: any) => any;
+export declare const action: (config: any) => any;
+export declare const internalQuery: (config: any) => any;
+export declare const internalMutation: (config: any) => any;
+export declare const internalAction: (config: any) => any;

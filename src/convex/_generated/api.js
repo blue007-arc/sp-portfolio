@@ -1,3 +1,7 @@
-import { anyApi } from "convex/server";
-export const api = anyApi;
-export const internal = anyApi;
+/* eslint-disable */
+export const api = new Proxy({}, {
+  get: () => new Proxy({}, {
+    get: () => () => ({})
+  })
+});
+export const internal = api;
