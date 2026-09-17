@@ -4,7 +4,6 @@
 *.env
 node_modules
 dist
-src/convex/_generated
 .DS_Store
 Thumbs.db
 .idea
